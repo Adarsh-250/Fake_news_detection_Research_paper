@@ -39,8 +39,8 @@ Ensure you have Python 3.8+ installed on your system.
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/yourusername/Fake-News-Detection-NLP.git](https://github.com/yourusername/Fake-News-Detection-NLP.git)
-cd Fake-News-Detection-NLP
+git clone [https://github.com/Adarsh-250/Fake_news_detection_Research_paper.git]
+cd Fake_news_detection_Research_paper
 2. Install dependencies:
 
 Bash
