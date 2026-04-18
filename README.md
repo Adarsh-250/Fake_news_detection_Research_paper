@@ -1,4 +1,4 @@
-<h1 align="center">🕵️‍♂️ Misinformation Detection using NLP</h1>
+<h1 align="center">🕵️‍♂️ fake news detection on social media platforms using natural language processing and passive aggressiv classifier</h1>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
