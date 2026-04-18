@@ -1,42 +1,64 @@
-# Misinformation Detection using Natural Language Processing
+<h1 align="center">🕵️‍♂️ Misinformation Detection using NLP</h1>
 
-## Overview
-This repository contains the source code and the final research paper for the detection of fake news using NLP techniques. The project utilizes TF-IDF vectorization alongside various machine learning classifiers (Multinomial Naive Bayes, Logistic Regression, SVM, and Passive Aggressive Classifier) to classify news articles as legitimate or fake.
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/Library-Scikit--Learn-orange.svg" alt="Scikit-Learn">
+  <img src="https://img.shields.io/badge/NLP-NLTK-green.svg" alt="NLTK">
+  <img src="https://img.shields.io/badge/Status-Evaluation_Ready-success.svg" alt="Status">
+</div>
 
-## Repository Components
+<br>
+
+> **Overview:** This repository contains the source code and the final research paper for the detection of fake news using advanced Natural Language Processing (NLP) techniques. The project utilizes TF-IDF vectorization alongside various machine learning classifiers to accurately classify news articles as legitimate or fake.
+
+---
+
+## 📂 Repository Components
+
 As per the evaluation requirements, this repository contains:
-1. **Report:** `Research_Paper.pdf` - The final published/submitted research paper.
-2. **Source Code:** - `baseline_models.py`: Script to train and evaluate Baseline ML models (Naive Bayes, Logistic Regression, SVM).
-   - `generate_metrics.py`: Script to train and evaluate the Passive Aggressive Classifier.
-3. **Datasets:** Requires `True.csv` and `Fake.csv` in the root directory.
+* 📄 **Report:** `Research_Paper.pdf` - The final published/submitted research paper.
+* 💻 **Source Code:** * `baseline_models.py`: Script to train and evaluate Baseline ML models (Naive Bayes, Logistic Regression, SVM).
+  * `generate_metrics.py`: Script to train and evaluate the Passive Aggressive Classifier.
+* 📊 **Datasets:** Required `.csv` files (linked below).
 
-## Prerequisites & Installation
-Ensure you have Python 3.8+ installed. 
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/yourusername/Fake-News-Detection-NLP.git](https://github.com/yourusername/Fake-News-Detection-NLP.git)
-   cd Fake-News-Detection-NLP
-Install required dependencies:
+## 💾 Dataset Installation (Important)
+
+Due to GitHub's file size limits, the datasets are hosted externally on Google Drive. You must download them before running the code.
+
+1. **Download the Data:** Click [this Google Drive Link](https://drive.google.com/drive/folders/1LaTPNj8HdWASmIPh6iVEJsKDPPXd3i9b?usp=sharing) to access the datasets.
+2. **Extract:** Download both `True.csv` and `Fake.csv`.
+3. **Placement:** Move both downloaded `.csv` files directly into the same folder as your Python scripts.
+
+---
+
+## ⚙️ Prerequisites & Setup
+
+Ensure you have Python 3.8+ installed on your system. 
+
+**1. Clone the repository:**
+```bash
+git clone [https://github.com/yourusername/Fake-News-Detection-NLP.git](https://github.com/yourusername/Fake-News-Detection-NLP.git)
+cd Fake-News-Detection-NLP
+2. Install dependencies:
 
 Bash
 pip install -r requirements.txt
-NLTK Stopwords Setup:
-The scripts require the NLTK stopwords dataset. It will attempt to download automatically, but you can manually ensure it is installed by running:
+3. NLTK Stopwords Setup:
+The scripts require the NLTK stopwords dataset to clean the text. Run this quick Python snippet to ensure it is downloaded:
 
 Python
 import nltk
 nltk.download('stopwords')
-Running the Project
-1. Baseline Models Evaluation
-To train the Multinomial Naive Bayes, Logistic Regression, and SVM models and print their Accuracy, Precision, Recall, and F1-Scores:
+🚀 Running the Project
+1️⃣ Baseline Models Evaluation
+Train the Multinomial Naive Bayes, Logistic Regression, and SVM models. This script handles text preprocessing (URL removal, HTML tag stripping, and stopword removal) before running the TF-IDF vectorizer.
 
 Bash
 python baseline_models.py
-Note: The script handles text preprocessing (URL removal, HTML tag removal, punctuation stripping, and stopword removal) before TF-IDF vectorization.
-
-2. Passive Aggressive Classifier (PAC) Evaluation
-To train the PAC model and generate a detailed classification report and confusion matrix:
+2️⃣ Passive Aggressive Classifier Evaluation
+Train the primary PAC model to generate a detailed classification report and confusion matrix.
 
 Bash
 python generate_metrics.py
